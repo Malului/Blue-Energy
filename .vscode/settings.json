@@ -1,0 +1,8 @@
+{
+    "editor.lightbulb.enabled": "off",
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "livePreview.defaultPreviewPath": "/index.html",
+    "files.watcherExclude": {
+        "**/target": true
+    }
+}
