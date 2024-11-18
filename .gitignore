@@ -23,4 +23,5 @@ dist
 *.njsproj
 *.sln
 *.sw?
-.vscode
+.vscode/
+dist/
