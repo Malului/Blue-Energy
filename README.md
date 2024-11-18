@@ -2,4 +2,4 @@ Blue Energy was among my first ever static frontend project several years ago be
 It serves as a reminder of a long computer science journey.
 Thank you and welcome.
 
-NB : I do not have the images copyright.
+Mobile responsive and AOS javascript animation

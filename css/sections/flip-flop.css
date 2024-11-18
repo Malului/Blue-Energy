@@ -64,7 +64,7 @@
   } 
 
   .flip-box-front p{
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-top: 8rem;
     font-weight: 800;
     font-size: 2.7rem;
