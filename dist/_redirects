@@ -1,7 +1,0 @@
-# Redirect paths without .html to the correct pages
-/about-us   /about-us.html   200
-/contact-us /contact-us.html 200
-/home       /index.html      200
-
-# Optional: Redirect the root URL to your homepage
-/           /index.html      200

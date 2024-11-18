@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Lato:ital@0;1&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+@import url("sections/header.css");
+@import url("sections/welcome.css");
+@import url("sections/findus.css");
+@import url("sections/services.css");
+@import url("sections/about-us.css");
+@import url("sections/flip-flop.css");
+@import url("sections/footer.css");
+
+
+
+:root{
+  --primary-color: #dcdcdc;
+  --third-nav-color: #faebd7;
+  --secondary-color: #1209b0;
+  --green-color: #024d0f;
+  --red-color:#7c0d0d;
+
+  --lato-display:"Lato", sans-serif;
+      /* font-weight: 400;
+      font-style: italic;
+      font-style: normal; */
+}
+
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* img{
+  max-width: 100%;
+  display: block;
+} */
+
+ul, 
+ol{
+  list-style: none;
+}
+
+button{
+  background: none;
+  cursor: pointer;
+}
+
+input,
+button,
+select,
+textarea{
+  font: inherit;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+    background-color: var(--primary-color);
+    text-rendering: optimizeSpeed;
+    margin: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+
+
+
+
+/* header */
+@media screen and (max-width: 1085px){
+  .header__nav{
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 5rem;
+  }
+
+  .header__logo{
+    flex: 0 1;
+    padding-left: 0;
+  }
+
+  .header__logo img{
+    width: 65px;
+    height: 65px;
+  }
+
+  .header__menu{
+   display: none;
+  } 
+
+
+  .header__dropdown{
+    flex: 0 1 auto;
+  }
+
+  .header__dropdown i{
+    visibility: visible;
+    font-size: 2rem;
+    cursor: pointer;
+  } 
+}
+
+
+/* findus sm*/
+@media screen and (max-width: 768px){
+  .findus{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .findus__locations{
+   flex-direction: column;
+    text-align: center;
+  }
+
+  .findus__locations-content{
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .findus__locations-image{
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+ 
+
+
+}
+
+/*findus md*/
+@media screen and (max-width: 1289px){
+  .findus{
+    padding: 2rem;
+   
+  }
+  .findus__locations-content-p1{
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+}
+
+
+/* welcome*/
+@media screen and (max-width: 800px){
+  .welcome{
+    height: 25rem; 
+    margin-top: 4.5rem;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../assets/images/petrol-station2-2.jpg');
+
+    background-size: 100% 100%;
+  
+  }
+
+  .welcome__content{
+    display: flex;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  
+  }
+
+  .welcome__content-p1{
+    font-size: 24px;
+    letter-spacing: .3rem;
+  }
+
+  .welcome__content-p2{
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+}
+
+
+/*Services*/
+@media screen and (max-width: 800px) {
+  .services{
+    padding: 4rem 2rem 2rem 2rem;
+  }
+
+  .services__content{
+    gap: 2.5rem;
+  }
+
+
+  .services__content-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+
+  .services__content-subtitle{
+    font-size: 1.2rem;
+  }
+
+  .services__products ul{
+    gap: 4rem;
+  }
+
+
+  .services__products li {
+      flex: 0 1 100%;
+  }
+
+
+  .services__products img{
+    max-width: 20rem;
+  }
+
+  .services__products p{
+    width: 20rem;
+    font-size: 1.5rem;
+  }
+
+  .services__visa{
+    font-size: 1.5rem;
+  }
+
+}
+
+/*Flip-flop md*/
+@media screen and (max-width: 1289px) {
+  .about-us__flips{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .flip-box{
+   width: 35rem;
+  }
+
+  .flip-box-back{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .about-us__title{
+    font-size: 3rem;
+  }
+}
+
+/*flip-box sm*/
+@media screen and (max-width: 800px){
+  .about-us{
+    gap: 3rem;
+    margin-top: 1rem;
+    padding: 2rem;
+  }
+
+  .about-us__title{
+    font-size: 2.5rem;
+  }
+
+  .about-us__flips{
+    gap: 4rem;
+  }
+
+  .flip-box{
+    width: 17rem;
+    height: 15rem;
+  }
+
+  .flip-box-front p{
+    margin-top: 5.5rem;
+    font-size: 2rem;
+  }
+
+  .flip-box-back{
+   padding: 1rem;
+   font-size: 1.4rem;
+  }
+}
+
+/*footer sm*/
+@media screen and (max-width: 740px) {
+  .footer1{
+    padding: .2rem;
+  }
+
+  .footer-div{
+    flex-direction: column;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .footer-div__logo{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-div__logo img{
+    padding: 1rem;
+  }
+
+  .footer-div__about-us ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-div__services ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-div__contact-us{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-div__contact-us p{
+    text-align: center;
+  }
+} 

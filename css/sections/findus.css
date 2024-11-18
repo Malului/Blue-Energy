@@ -1,0 +1,84 @@
+.findus{
+    padding: 5rem;
+    width: 100%;
+}
+
+.findus__locations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.findus__locations-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.findus__locations-content-p1{
+    font-family: var(--lato-display);
+    font-weight: 800;
+    font-style: italic;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--green-color);
+    letter-spacing: .2rem;
+    line-height: 1.2;
+}
+
+
+.findus__locations-content button{
+    background-color: var(--red-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: var(--primary-color);
+    font-family: var(--lato-display);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-right: 0;
+    
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* transition: all 0.2s ease; */
+
+}
+
+
+
+.findus__locations-content button i{
+    /* visibility: hidden; */
+    padding: .5rem;
+    transition: visibility 0.3s ease;
+}
+
+.findus__locations-content button:hover{
+    background-color: #a90404;
+    color: var(--third-nav-color);
+    font-size: 1.6rem;
+}
+
+.findus__locations-content button:hover i{
+    padding: .6rem;
+    visibility: visible;
+}
+
+
+
+.findus__locations-image{
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+.findus__locations-image img{
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+
+} 

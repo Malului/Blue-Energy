@@ -1,0 +1,86 @@
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 25rem;
+    height: 20rem;
+    perspective: 1000px; 
+
+    font-family: var(--lato-display);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+    justify-content: center;
+    display: flex;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: var(--primary-color);
+    color: black;
+  }
+
+  .flip1{
+    background-image: url('../../assets/images/pipeline1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } 
+
+  .flip2{
+    background-image: url('../../assets/images/family1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } 
+
+  .flip3{
+    background-image: url('../../assets/images/values1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } 
+
+  .flip-box-front p{
+    color: var(--secondary-color);
+    margin-top: 8rem;
+    font-weight: 800;
+    font-size: 2.7rem;
+    background-color:  rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    font-style: normal;
+  }
+
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: var(--green-color);
+    color: var(--primary-color);
+    transform: rotateY(180deg);
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }

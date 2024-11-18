@@ -1,0 +1,26 @@
+.about-us{
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    font-family: var(--lato-display);
+}
+
+.about-us__title{
+    font-size: 3.75rem;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.about-us__flips{
+   display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    font-style: italic;
+}

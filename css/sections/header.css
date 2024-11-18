@@ -1,0 +1,57 @@
+.header__nav{
+    background-color: var(--third-nav-color);
+    display: flex;
+    overflow: visible;  /*maybe try hidden*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+    height: 6rem;
+    z-index: 1000;
+}
+
+.header__logo{
+    flex: 1;
+    padding: 2rem;
+}
+
+.header__logo img{
+    border-radius: 100%; 
+    width: 85px;
+    height: 85px;
+}
+
+.header__menu{
+    flex: 2;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    align-items: center;
+    list-style: none;
+}
+
+.header__menu ul{
+    display: flex;
+}
+
+.header__menu ul li{
+    flex: 1;
+    font-family: var(--lato-display);
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.56rem;
+}
+
+.header__menu a:hover{
+    color: var(--green-color);
+    font-size: 1.58rem;
+}
+
+.header__dropdown{
+    flex: 1;
+}
+
+.header__dropdown i{
+    visibility: hidden;
+}
