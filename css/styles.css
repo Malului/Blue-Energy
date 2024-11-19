@@ -124,27 +124,6 @@ body{
     font-size: 2rem;
     cursor: pointer;
   } 
-
-
-  .welcome{
-    border: 2px solid red;
-  }
-
-  .findus{
-    border: 2px solid red;
-  }
-
-  .services{
-    border: 2px solid red;
-  }
-
-  .footer1{
-    border: 2px solid red;
-  }
-
-  .about-us{
-    border: 2px solid red;
-  }
 }
 
 
