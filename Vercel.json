@@ -4,5 +4,9 @@
         "NODE_ENV": "production"
       }
     },
-    "docker": {}
+    "docker": {},
+
+    "framework": "vite",
+    "installCommand": "npm install --production=false"
+
   }
